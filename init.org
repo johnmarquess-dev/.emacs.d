@@ -16,6 +16,9 @@ Ensuring coding can handle international characters
 (blink-cursor-mode -1)
 #+END_SRC
 
+* TODO Figlet / other demo stuff
+* TODO install packages
+* TODO intsall magit
 
 * Local Variables
 # Local Variables:
