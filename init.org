@@ -1,6 +1,6 @@
 #+PROPERTY: header-args :tangle yes :comments yes :results silent
 
-# Some initial settings
+* Some initial settings
 Ensuring coding can handle international characters
 
 #+BEGIN_SRC emacs-lisp
