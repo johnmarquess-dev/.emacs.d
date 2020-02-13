@@ -1,25 +1,51 @@
 #+PROPERTY: header-args :tangle yes :comments yes :results silent
 
 * Some initial settings
-Ensuring coding can handle international characters
 
+Make sure that we are using a coding system that can handle international characters
 #+BEGIN_SRC emacs-lisp
-(set-default-coding-systems 'utf-8)
-(set-terminal-coding-system 'utf-8)
+   (set-default-coding-systems 'utf-8)
+   (set-terminal-coding-system 'utf-8)
 #+END_SRC
+
 
 * UI Tweaks
+
+** Menu-bar
+Turn off the menu bar. It can still be accessed with ~F10~.
+
 #+BEGIN_SRC emacs-lisp
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(blink-cursor-mode -1)
+  (menu-bar-mode -1)
+  (tool-bar-mode -1)
 #+END_SRC
 
-* TODO install packages
-[[help:list-packages][Help for list packages]]
+
+* Setting up package-archives and  Install use-package
+** Install use-package
+
+#+BEGIN_SRC emacs-lisp
+(require 'package)
+(add-to-list 'package-archives
+       '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives
+       '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+
+(package-initialize)
+(unless (package-installed-p 'use-package )
+  (package-refresh-contents)
+  (package-install 'use-package ))
+
+(require 'use-package)
+
+
+#+END_SRC
+
+
 * TODO Figlet / other demo stuff
 * TODO intsall magit
+* TODO Make source code blocks default to ~emacs-lisp~
+
 
 * Local Variables
 # Local Variables:
