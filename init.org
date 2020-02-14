@@ -7,6 +7,7 @@ Make sure that we are using a coding system that can handle international charac
    (set-terminal-coding-system 'utf-8)
 #+END_SRC
 
+*** some useless text
 
 * UI Tweaks
 
