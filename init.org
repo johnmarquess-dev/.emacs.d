@@ -1,5 +1,5 @@
 #+PROPERTY: header-args :tangle yes :comments yes :results silent
-
+o
 * Some initial settings
 
 Make sure that we are using a coding system that can handle international characters
@@ -88,13 +88,11 @@ Turn off the menu bar. It can still be accessed with ~F10~.
 (require 'use-package)
 #+END_SRC
 
-
 * Configure use-package
 #+BEGIN_SRC emacs-lisp
 (setq use-package-always-ensure t)
 #+END_SRC
 
-* TODO Figlet / other demo stuff
 
 * Intsall magit
 #+BEGIN_SRC emacs-lisp
@@ -102,6 +100,11 @@ Turn off the menu bar. It can still be accessed with ~F10~.
   :commands (magit-status)
   :bind ("C-x g" . magit-status))
 #+END_SRC
+
+
+
+* TODO Figlet / other demo stuff
+
 
 * TODO Make source code blocks default to ~emacs-lisp~
 
