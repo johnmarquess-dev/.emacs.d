@@ -1,5 +1,4 @@
 #+PROPERTY: header-args :tangle yes :comments yes :results silent
-o
 * Some initial settings
 
 Make sure that we are using a coding system that can handle international characters
