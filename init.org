@@ -19,15 +19,10 @@ Turn off the menu bar. It can still be accessed with ~F10~.
   (setq inhibit-startup-message t)
 #+END_SRC
 
-** Split window horizontally
-#+BEGIN_SRC emacs-lisp
-(split-window-horizontally)
-#+END_SRC
-
 ** Define some functions that allow font-size adjustment in frames
 #+BEGIN_SRC emacs-lisp
 (setq jm/font-name "Hack")
-(defcustom jm/font-size 14 "My default font size")
+(defcustom jm/font-size 15 "My default font size")
 
 (defun set-frame-font-size (&optional font-size)
   (let ((font-size
@@ -102,9 +97,16 @@ Turn off the menu bar. It can still be accessed with ~F10~.
 
 
 ** TODO Figlet / other demo stuff
+** TODO Customize
+* Use a customization file
 
+#+BEGIN_SRC emacs-lisp
+(setq custom-file (locate-user-emacs-file "custom.el"))
+(if (file-readable-p custom-file)
+    (load custom-file))
+#+END_SRC
 
-** TODO Make source code blocks default to ~emacs-lisp~
+** Todo Make source code blocks default to ~emacs-lisp~
 
 
 ** Local Variables (hidden - view in raw)
