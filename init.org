@@ -101,7 +101,7 @@ Turn off the menu bar. It can still be accessed with ~F10~.
 * Use a customization file
 
 #+BEGIN_SRC emacs-lisp
-(setq custom-file (locate-user-emacs-file "custom.el"))
+(setq custom-file  "~/.emacs.d/custom.el")
 (if (file-readable-p custom-file)
     (load custom-file))
 #+END_SRC
