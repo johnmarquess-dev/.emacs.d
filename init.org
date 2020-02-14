@@ -19,9 +19,13 @@ Turn off the menu bar. It can still be accessed with ~F10~.
   (tool-bar-mode -1)
 #+END_SRC
 
+** Split window horizontally
+#+BEGIN_SRC emacs-lisp
+(split-window-horizontally)
+#+END_SRC
 
 * Setting up package-archives and  Install use-package
-** Install use-package
+** Set up package archives and install use-package
 
 #+BEGIN_SRC emacs-lisp
 (require 'package)
@@ -37,13 +41,19 @@ Turn off the menu bar. It can still be accessed with ~F10~.
   (package-install 'use-package ))
 
 (require 'use-package)
-
-
 #+END_SRC
 
 
+** TODO Configure use-package
+
 * TODO Figlet / other demo stuff
-* TODO intsall magit
+* Intsall magit
+#+BEGIN_SRC emacs-lisp
+(use-package magit
+  :ensure t
+  :commands (magit-status)
+  :bind ("C-x g" . magit-status))
+#+END_SRC
 * TODO Make source code blocks default to ~emacs-lisp~
 
 
