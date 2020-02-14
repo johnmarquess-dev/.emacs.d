@@ -51,14 +51,12 @@ Turn off the menu bar. It can still be accessed with ~F10~.
 
 * TODO Figlet / other demo stuff
 
-
 * Intsall magit
 #+BEGIN_SRC emacs-lisp
 (use-package magit
   :commands (magit-status)
   :bind ("C-x g" . magit-status))
 #+END_SRC
-
 
 * TODO Make source code blocks default to ~emacs-lisp~
 
