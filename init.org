@@ -69,7 +69,7 @@ Turn off the menu bar. It can still be accessed with ~F10~.
 (setq auto-revert-verbose nil)
 #+END_SRC
 
-* Setting up package-archives and  Install use-package
+* Install ~use-package~ and then other packages
 ** Set up package archives and install use-package
 
 #+BEGIN_SRC emacs-lisp
@@ -88,13 +88,13 @@ Turn off the menu bar. It can still be accessed with ~F10~.
 (require 'use-package)
 #+END_SRC
 
-* Configure use-package
+** Configure use-package
 #+BEGIN_SRC emacs-lisp
 (setq use-package-always-ensure t)
 #+END_SRC
 
 
-* Intsall magit
+** Intsall magit
 #+BEGIN_SRC emacs-lisp
 (use-package magit
   :commands (magit-status)
@@ -103,13 +103,13 @@ Turn off the menu bar. It can still be accessed with ~F10~.
 
 
 
-* TODO Figlet / other demo stuff
+** TODO Figlet / other demo stuff
 
 
-* TODO Make source code blocks default to ~emacs-lisp~
+** TODO Make source code blocks default to ~emacs-lisp~
 
 
-* Local Variables
+** Local Variables (hidden - view in raw)
 # Local Variables:
 # eval: (add-hook 'after-save-hook (lambda() (org-babel-tangle)) nil t)
 # End:
