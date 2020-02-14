@@ -26,4 +26,7 @@ emojis/*
 /recentf
 /request/
 /transient/history.el
-init.el
+/init.el
+places
+.emacs.desktop
+.emacs.desktop.lock
